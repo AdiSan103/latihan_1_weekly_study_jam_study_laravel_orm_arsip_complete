@@ -1,0 +1,61 @@
+1. Membuat Migration :  https://laravel.com/docs/10.x/migrations#main-content
+// php artisan make:migration create_user
+php artisan make:migration create_category
+php artisan make:migration create_blog
+
+run : php artisan migrate
+kalau error : php artisan migrate:refresh
+
+2. Membuat Seeders : https://laravel.com/docs/10.x/seeding#writing-seeders
+php artisan make:seeder UserSeeder
+php artisan make:seeder CategorySeeder
+php artisan make:seeder BlogSeeder
+
+Setting di DatabaseSeeder
+
+run : php artisan db:seed
+
+3. Membuat Model : https://laravel.com/docs/10.x/eloquent#generating-model-classes 
+php artisan make:model UserModel
+php artisan make:model CategoryModel
+php artisan make:model BlogModel
+
+3.1 table names
+3.2 table primary keys
+3.3 fillable
+3.4 relation blog to category : https://laravel.com/docs/10.x/eloquent-relationships
+
+4. Controller : https://laravel.com/docs/10.x/controllers#main-content
+php artisan make:controller AdminController
+
+5. Route
+// dashboard view
+// detail view 
+// create view
+// create action
+// update view
+// update action
+// delete
+
+6. View
+// support bootstrap : https://getbootstrap.com/docs/5.3/getting-started/introduction/
+// laravel blade : https://laravel.com/docs/10.x/blade#main-content
+// https://laravel.com/docs/10.x/blade#layouts-using-template-inheritance
+
+// template.blade
+// admin/.. ( source file )
+// admin/dashboard -> tabel
+// admin/create -> form tambah
+// admin/update -> form update 
+// admin/detail -> form detail
+// template
+
+7. Read Data
+8. Create Data
+9. Detail Data
+10. Update Data
+11. Delete
+12. Bonus upload file : https://laravel.com/docs/10.x/filesystem#the-public-disk -> create, update, delete
+13. Validation Create and Update -> old()
+// https://laravel.com/docs/10.x/requests#old-input
+// https://laravel.com/docs/10.x/validation#working-with-error-messages
